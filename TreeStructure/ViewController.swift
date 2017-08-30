@@ -50,6 +50,9 @@ class ViewController: UIViewController {
                 print("===================")
                 
                 print(rootNode.search(firstName: "Amir")!.description)
+                print(rootNode.search(firstName: "Amir")!.isMemberWithNoSupervisorMembers()) // false
+                print(rootNode.search(firstName: "Amitabh")!.isMemberWithNoSupervisorMembers()) //false
+                print(rootNode.search(firstName: "Varun")!.isMemberWithNoSupervisorMembers()) //true
             
             }
         } catch {

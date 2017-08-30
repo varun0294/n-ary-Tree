@@ -27,17 +27,15 @@ class Member {
         team.append(teamMember)
         teamMember.parent = self
     }
+    
+    
 }
 
 
 extension Member : CustomStringConvertible {
-    // 2
     var description: String {
-        // 3
         var text = "\(firstName)" //\(lastName)"
        // var lastName = "\(lastName)"
-        
-        // 4
         if !team.isEmpty {
             text += " [ " + team.map { $0.description }.joined(separator: ", ") + " ] "
         }
@@ -45,18 +43,32 @@ extension Member : CustomStringConvertible {
     }
     
     func search(firstName: String) -> Member? {
-        // 2
         if firstName == self.firstName {
             return self
         }
-        // 3
         for member in team {
             if let found = member.search(firstName: firstName) {
                 return found
             }
         }
-        // 4
         return nil
+    }
+    
+    
+    func isMemberWithNoSupervisorMembers() -> Bool{ // -> [Member] {
+        
+        
+        for members in team{
+            if members.team.count > 0 {
+               return false
+            } else {
+                continue;
+            }
+        }
+        
+    
+      return true
+    
     }
     
     

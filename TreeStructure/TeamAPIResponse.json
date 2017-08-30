@@ -36,7 +36,21 @@
                     {  
                     "firstName":"Varun",
                     "lastName":"Dhawan",
-                    "team":[  
+                    "team":[
+                            {
+                            "firstName":"Sanjay",
+                            "lastName":"Dutt",
+                            "team":[
+                            
+                            ]
+                            } ,
+                            {
+                            "firstName":"Raneer",
+                            "lastName":"Singh",
+                            "team":[
+                            
+                            ]
+                            }
                     
                     ]
                     }
