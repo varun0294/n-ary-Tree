@@ -43,4 +43,21 @@ extension Member : CustomStringConvertible {
         }
         return text
     }
+    
+    func search(firstName: String) -> Member? {
+        // 2
+        if firstName == self.firstName {
+            return self
+        }
+        // 3
+        for member in team {
+            if let found = member.search(firstName: firstName) {
+                return found
+            }
+        }
+        // 4
+        return nil
+    }
+    
+    
 }

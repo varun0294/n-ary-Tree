@@ -16,6 +16,7 @@
 		8BAC7B7D1F57102A006D89D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BAC7B7B1F57102A006D89D0 /* LaunchScreen.storyboard */; };
 		8BAC7B851F571055006D89D0 /* TeamAPIResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 8BAC7B841F571055006D89D0 /* TeamAPIResponse.json */; };
 		8BAC7B871F571EFD006D89D0 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAC7B861F571EFD006D89D0 /* Member.swift */; };
+		8BAC7B891F5734CE006D89D0 /* TeamMemberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAC7B881F5734CE006D89D0 /* TeamMemberTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		8BAC7B7E1F57102A006D89D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BAC7B841F571055006D89D0 /* TeamAPIResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TeamAPIResponse.json; sourceTree = "<group>"; };
 		8BAC7B861F571EFD006D89D0 /* Member.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
+		8BAC7B881F5734CE006D89D0 /* TeamMemberTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamMemberTableViewCell.swift; sourceTree = "<group>"; };
 		D7F5EC507181BE32D45FA7B3 /* Pods-TreeStructure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreeStructure.release.xcconfig"; path = "Pods/Target Support Files/Pods-TreeStructure/Pods-TreeStructure.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +87,7 @@
 				8BAC7B761F57102A006D89D0 /* TreeStructure.xcdatamodeld */,
 				8BAC7B841F571055006D89D0 /* TeamAPIResponse.json */,
 				8BAC7B861F571EFD006D89D0 /* Member.swift */,
+				8BAC7B881F5734CE006D89D0 /* TeamMemberTableViewCell.swift */,
 			);
 			path = TreeStructure;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				8BAC7B721F57102A006D89D0 /* ViewController.swift in Sources */,
 				8BAC7B701F57102A006D89D0 /* AppDelegate.swift in Sources */,
 				8BAC7B781F57102A006D89D0 /* TreeStructure.xcdatamodeld in Sources */,
+				8BAC7B891F5734CE006D89D0 /* TeamMemberTableViewCell.swift in Sources */,
 				8BAC7B871F571EFD006D89D0 /* Member.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,6 +9,18 @@
 import UIKit
 import SwiftyJSON
 
+extension ViewController : UITableViewDataSource , UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+
+}
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -22,17 +34,23 @@ class ViewController: UIViewController {
     }
     
     
-    private func readJson() {
+    private func readJson()  {
         do {
             if let file = Bundle.main.url(forResource: "TeamAPIResponse", withExtension: "json") {
                 let data = try Data(contentsOf: file)
+                
                 let json = JSON(data)
+                
                 let rootNode = Member.init(firstName: "Amitabh" , lastName: "Bachan")
                 
                 createTree(json: json["team"] , rootNode: rootNode)
                 
                 print(rootNode.description)
                 
+                print("===================")
+                
+                print(rootNode.search(firstName: "Amir")!.description)
+            
             }
         } catch {
             print(error.localizedDescription)
@@ -49,10 +67,7 @@ class ViewController: UIViewController {
               createTree(json: member.1["team"] , rootNode: memberNode)
             }
         })
-    
     }
-    
-    
     
 
 }
